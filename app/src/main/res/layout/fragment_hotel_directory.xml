@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/lyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_top_bg">
+
+        <TextView
+            android:id="@+id/tv_hotel_directory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4sp"
+            android:fontFamily="@font/bebas_regular"
+            android:includeFontPadding="false"
+            android:text="@string/guest_service_directory"
+            android:textColor="@color/brownish_grey"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_hotel_directory_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hotel_directory"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/gotham_light"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/guest_service_desc"
+            android:textColor="@color/txt_color"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lyt_title"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hotel_directory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:nestedScrollingEnabled="false" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shimmer_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/hotel_directory_shimmer"/>
+
+                <include
+                    layout="@layout/hotel_directory_shimmer"
+                    />
+
+                <include
+                    layout="@layout/hotel_directory_shimmer"/>
+
+                <include
+                    layout="@layout/hotel_directory_shimmer"/>
+
+            </LinearLayout>
+
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

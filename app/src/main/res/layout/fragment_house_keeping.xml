@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_above="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/lyt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/home_top_bg">
+                <TextView
+                    android:id="@+id/tv_header_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/bebas_regular"
+                    android:text="List of Services"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyt_rview"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lyt_title"
+                android:layout_height="match_parent">
+
+
+                <ExpandableListView
+                    android:id="@+id/house_keeping_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:nestedScrollingEnabled="false"/>
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shimmer_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--<include
+                            layout="@layout/house_keeping_shimmer"/>
+
+                        <include
+                            layout="@layout/house_keeping_shimmer"/>-->
+
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+                        <include
+                            layout="@layout/laundry_shimmer"/>
+
+                    </LinearLayout>
+
+
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/brownish_grey"
+            android:fontFamily="@font/gotham_medium"
+            android:gravity="center_vertical"
+            android:text="@string/submit_request"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

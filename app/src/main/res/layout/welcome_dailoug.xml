@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialoug_bg">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="385dp"
+        android:background="#aaa49d">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-15dp"
+            android:layout_marginTop="-65dp"
+            android:alpha="0.1"
+            android:src="@drawable/logo_black" />
+
+        <RelativeLayout
+            android:id="@+id/img_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_shape" />
+
+            <ImageView
+                android:id="@+id/iv_done"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avd_done" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/welcome_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_round"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bebas_regular"
+            android:includeFontPadding="false"
+            android:lineHeight="32sp"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/welcome_txt"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_getstarted"
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/welcome_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:alpha="0.85"
+            android:background="@color/brownish_grey"
+            android:fontFamily="@font/gotham_medium"
+            android:includeFontPadding="false"
+            android:text="Get Started" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

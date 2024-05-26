@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:id="@+id/header_lyt"
+        android:layout_width="match_parent"
+        android:background="@color/home_top_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bebas_regular"
+            android:includeFontPadding="false"
+            android:id="@+id/tv_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/places_to_visit"
+            android:lineSpacingExtra="-16sp"
+            android:textColor="@color/brownish_grey"
+            android:textSize="28sp" />
+        <TextView
+            android:layout_below="@+id/tv_header_view"
+            android:text="@string/sub_header_tour"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="4sp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/gotham_light"
+            android:textColor="@color/brownish_grey"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tour_guide_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_lyt" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

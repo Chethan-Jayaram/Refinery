@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/home_top_bg"
+    android:padding="1dp"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/tv_cab_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@color/brownish_grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/car_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/gotham_light"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6.7sp"
+        android:padding="5dp"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp" />-->
+
+   <!-- <TextView
+        android:background="@color/home_top_bg"
+        android:id="@+id/tv_cab_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothambook"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:text="MERCEDES BENZ S550"
+        android:textColor="@color/brownish_grey"
+        android:textSize="16sp"
+        android:textStyle="bold" />-->
+
+    <!--<TextView
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:background="@color/home_top_bg"
+        android:id="@+id/car_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/gotham_light"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6.7sp"
+        android:textColor="@color/brownish_grey"
+        android:textSize="12sp" />-->
+
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="0.12"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/tv_cab_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_vertical"
+        android:textColor="@color/brownish_grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/car_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/gotham_light"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingTop="5dp"
+        android:textColor="@color/txt_color"
+        android:textSize="10sp" />
+
+    <!--<TextView
+        android:background="@color/brownish_grey"
+        android:id="@+id/tv_detailed_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/gotham_medium"
+        android:text="Details"
+        android:textColor="@color/black" />-->
+
+    <LinearLayout
+        android:id="@+id/lyt_detailed_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/gotham_light"
+                android:background="@drawable/et_border_brown"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:text="Destination"
+                android:textColor="@color/txt_color" />
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_border_brown"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gotham_light"
+                    android:text="From Airport"
+                    android:textColor="@color/txt_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_border_brown"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gotham_light"
+                    android:text="To Airport"
+                    android:textColor="@color/txt_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_detailed_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_min_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/gotham_light"
+                android:background="@drawable/et_border_brown"
+                android:textColor="@color/txt_color" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:background="@drawable/et_border_brown"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hourlyprice"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/gotham_light"
+                    android:textAlignment="center"
+                    android:textColor="@color/txt_color" />
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />-->
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

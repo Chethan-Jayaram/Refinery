@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_register">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/bebas_regular"
+                android:text="Welcome to hotel Refinery"
+                android:textAlignment="center"
+                android:textColor="@color/brownish_grey"
+                android:textSize="30dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/brownish_grey">
+
+                <EditText
+                    android:id="@+id/tv_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brownish_grey"
+                    android:fontFamily="@font/gotham_medium"
+
+                    android:hint="@string/first_name"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/brownish_grey">
+
+                <EditText
+                    android:id="@+id/tv_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brownish_grey"
+                    android:fontFamily="@font/gotham_medium"
+                    android:hint="@string/last_name"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/brownish_grey">
+
+                <EditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brownish_grey"
+                    android:fontFamily="@font/gotham_medium"
+                    android:hint="@string/email"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+
+                    android:textSize="14sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/reg_country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_border_brown"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                app:ccp_backgroundColor="@color/background"
+                app:ccp_defaultNameCode="@string/country_united_states_code"
+                app:ccp_dialogTextColor="@color/white"
+                app:ccp_showFullName="true"
+                app:ccp_textColor="@color/white"
+                app:ccp_textFont="@font/gotham_medium" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:textColorHint="@color/brownish_grey">
+
+                <EditText
+                    android:id="@+id/tv_contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brownish_grey"
+                    android:fontFamily="@font/gotham_medium"
+                    android:hint="Mobile Number"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/btn_bg"
+        android:fontFamily="@font/gotham_medium"
+        android:includeFontPadding="false"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textSize="14sp" />
+</RelativeLayout>

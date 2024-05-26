@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/end_lyt"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="2sp"
+        android:fontFamily="@font/gotham_medium"
+        android:textSize="12.5sp"/>
+    <TextView
+        android:id="@+id/tv_category_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_light"
+        android:lineSpacingExtra="5.3sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/txt_color"
+        android:layout_below="@+id/tv_category_title"
+        android:layout_toStartOf="@+id/end_lyt"
+        android:textSize="11.5sp" />
+
+    <TextView
+        android:fontFamily="@font/gotham_light"
+        android:id="@+id/tv_category_price"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_category_desc"
+        android:layout_toStartOf="@+id/end_lyt"
+        android:textSize="12sp"
+        android:textColor="@color/txt_color"/>
+
+    <RelativeLayout
+        android:id="@+id/end_lyt"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="1dp">
+
+        <include
+            android:id="@+id/number_stepper"
+            layout="@layout/number_stepper"
+            android:layout_width="85dp"
+            android:layout_height="35dp" />
+
+        <include
+            android:id="@+id/add_lyt"
+            layout="@layout/add_preview"
+            android:layout_width="85dp"
+            android:layout_height="35dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

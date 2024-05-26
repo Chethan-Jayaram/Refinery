@@ -1,0 +1,135 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.6'
+
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.application.refinary"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                onesignal_app_id  : 'be4f13bc-5f44-4e44-b3ad-ec9aa485e5a0',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+//        debug {
+//            minifyEnabled true
+//            shrinkResources true
+//            debuggable true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    //implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0-alpha02'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //adding view model
+
+    // ViewModel and LiveData
+
+    //adding paging
+    implementation 'androidx.paging:paging-runtime:2.1.2'
+
+    //Country code Picker
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+
+    //animations
+    implementation 'com.airbnb.android:lottie:3.4.2'
+
+    implementation 'com.github.beigirad:ZigzagView:1.0.7'
+
+
+    //auto read
+    implementation 'com.google.android.gms:play-services-base:18.1.0'
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.annotation:annotation:1.4.0'
+    implementation 'org.jetbrains:annotations:18.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.1'
+
+    //calendar library
+
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+  //  implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'com.github.vipulasri:timelineview:1.1.5'
+
+
+    //shimmer layout dependency
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    //image pic and crop lib
+    implementation 'com.myhexaville:smart-image-picker:1.0.4'
+
+    ///multiple image picker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.2.0'
+
+    //implementation 'com.onesignal:OneSignal:3.15.3'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'com.google.android.play:core:1.10.3'
+
+    implementation ('io.socket:socket.io-client:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+}

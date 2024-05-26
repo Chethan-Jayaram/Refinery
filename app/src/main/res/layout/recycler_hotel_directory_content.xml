@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/gotham_medium"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="4sp"
+        android:textColor="@color/brownish_grey"
+        android:textSize="13sp" />
+
+    <TextView
+        android:autoLink="email|phone|web|map"
+        android:linksClickable="true"
+        android:fontFamily="@font/gotham_light"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textColorLink="@color/white"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

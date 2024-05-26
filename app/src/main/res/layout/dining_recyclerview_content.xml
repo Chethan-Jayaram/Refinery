@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_top_bg"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_wine_dine"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:scaleType="matrix" />
+
+            <!--<TextView
+                android:id="@+id/tv_wine_dine_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/border_edges"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home_top_bg">
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/bt_3d_view"
+                android:id="@+id/tv_wine_dine_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_3d_view"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="#857d6b"
+                android:fontFamily="@font/gotham_bold"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="10dp"
+                android:text="3D View"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!--<TextView
+                android:id="@+id/dining_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gotham_light"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="6.7sp"
+                android:padding="5dp"
+                android:textColor="@color/txt_color"
+                android:textSize="12sp" />-->
+
+            <TextView
+                android:layout_below="@+id/tv_wine_dine_title"
+                android:id="@+id/dining_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gotham_light"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="6.7sp"
+                android:padding="5dp"
+                android:textColor="@color/txt_color"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_help_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dining_desc"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/gotham_light"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="6.7sp"
+                android:padding="5dp"
+                android:textColor="@color/txt_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

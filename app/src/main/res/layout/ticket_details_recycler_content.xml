@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/home_top_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:fontFamily="@font/gothambook"
+        android:id="@+id/tv_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="5sp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/gothambook"
+        android:paddingStart="2dp"
+        android:id="@+id/tv_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="-0.7sp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:paddingStart="2dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/gothambook"
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="-0.7sp"
+        android:textSize="14sp" />
+</LinearLayout>

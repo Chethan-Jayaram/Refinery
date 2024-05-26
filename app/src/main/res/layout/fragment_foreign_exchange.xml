@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_exchange"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/tv_currnecy_converter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/bebas_regular"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/currency_converter"
+                android:textColor="@color/brownish_grey"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_currnecy_converter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="@string/amount"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <EditText
+                android:fontFamily="@font/gotham_medium"
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_amount"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_border_brown"
+                android:hint="Amount"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:id="@+id/lyt_exchnage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_amount"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:fontFamily="@font/gotham_medium"
+                        android:id="@+id/tv_from_currnecy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_currency"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:fontFamily="@font/gotham_light"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/et_from_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_from_currnecy"
+                        android:background="@drawable/et_border_brown"
+                        android:drawableEnd="@drawable/arrow_drop_down"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_swap_category"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:padding="4dp"
+                    android:src="@drawable/img_exchange" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:fontFamily="@font/gotham_medium"
+                        android:id="@+id/tv_to_currnecy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_currency"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:fontFamily="@font/gotham_light"
+                        android:id="@+id/et_to_currency"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@+id/tv_to_currnecy"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_border_brown"
+                        android:drawableEnd="@drawable/arrow_drop_down"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--  <Button
+                  android:fontFamily="@font/gotham_medium"
+                  android:id="@+id/btn_convert"
+                  android:layout_width="120dp"
+                  android:layout_height="40dp"
+                  android:layout_below="@+id/lyt_exchnage"
+                  android:layout_centerHorizontal="true"
+                  android:layout_margin="25dp"
+                  android:includeFontPadding="false"
+                  android:background="@color/brownish_grey"
+                  android:padding="15dp"
+                  android:text="@string/get_value"
+                  android:textColor="@color/black"
+                  android:textSize="12sp"/>
+  -->
+            <RelativeLayout
+                android:id="@+id/lyt_response"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lyt_exchnage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_from_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/gotham_light"
+                    android:textAlignment="center"
+                    android:textColor="@color/txt_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:fontFamily="@font/gotham_light"
+                    android:id="@+id/tv_updated_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_from_to"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/txt_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:fontFamily="@font/gotham_medium"
+                    android:id="@+id/exchange_from_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_updated_date"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="20dp"
+                    android:includeFontPadding="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:fontFamily="@font/gotham_medium"
+                    android:id="@+id/exchange_to_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exchange_from_result"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:includeFontPadding="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:fontFamily="@font/gotham_medium"
+                    android:id="@+id/tv_from_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exchange_to_result"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:fontFamily="@font/gotham_medium"
+                    android:id="@+id/tv_to_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_from_standard"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:includeFontPadding="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/tv_to_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/txt_color"
+                    android:lineSpacingExtra="6sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/excahnage_desc" />
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--   <TextView
+           android:id="@+id/btn_exchange"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="0dp"
+           android:background="@color/brownish_grey"
+           android:fontFamily="@font/gotham_medium"
+           android:gravity="center_vertical"
+           android:includeFontPadding="false"
+           android:text="@string/request_exchange"
+           android:textAlignment="center"
+           android:textColor="@color/black"
+           android:textSize="14sp"
+           tools:ignore="RtlCompat" />
+
+   -->
+
+
+
+    <TextView
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/brownish_grey"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="@string/get_value"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:ignore="RtlCompat" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

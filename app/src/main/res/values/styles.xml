@@ -1,0 +1,122 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/home_top_bg</item>
+        <item name="colorAccent">@color/btn_bg</item>
+        <item name="android:listDivider">@android:color/transparent</item>
+    </style>
+
+
+    <!-- <style name="myTimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker"
+         tools:targetApi="lollipop">
+         <item name="android:headerBackground">@android:color/darker_gray</item>
+     </style>
+
+     <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+         <item name="colorAccent">@color/brownish_grey</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+     </style>-->
+    <!--
+
+
+
+
+        <style name="Theme.MyTheme.TimePicker" parent="android:Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+            <item name="android:timePickerMode">clock</item>
+            <item name="android:headerBackground">#ffffff</item>
+          &lt;!&ndash;  <item name="android:numbersTextColor">?android:attr/textColorPrimaryActivated</item>&ndash;&gt;
+    &lt;!&ndash;        <item name="android:numbersInnerTextColor" tools:targetApi="m">?android:attr/textColorSecondaryActivated</item>&ndash;&gt;
+            <item name="android:numbersSelectorColor">?android:attr/colorControlActivated</item>
+            <item name="android:numbersBackgroundColor">#ffffff</item>
+            <item name="android:amPmTextColor">?android:attr/textColorSecondary</item>
+        </style>
+    -->
+
+
+
+    <style name="MyBase.TimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/background</item>
+        <item name="android:headerBackground">@color/home_top_bg</item>
+        <item name="android:textColor">@color/brownish_grey</item>
+        <item name="android:dividerHorizontal">@color/brownish_grey</item>
+        <item name="android:divider">@color/white</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/dark_gray</item>
+        <item name="android:textColorPrimary">@color/brownish_grey</item>
+
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/txt_color</item>
+        <item name="colorControlActivated">@color/brownish_grey</item>
+    </style>
+
+
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#857d6b</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#FFFFFF
+        </item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+
+    </style>
+    <style name="MineCustomTabText7inch" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+
+    </style>
+
+    <style name="MineCustomTabText10inch" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+
+    </style>
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="myTimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="android:numbersTextColor">@color/brownish_grey</item>
+        <item name="android:numbersBackgroundColor">@color/background</item>
+        <item name="android:numbersSelectorColor">@color/white</item>
+        <item name="android:headerBackground">@color/background</item>
+    </style>
+
+
+
+</resources>

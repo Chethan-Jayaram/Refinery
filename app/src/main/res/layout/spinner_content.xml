@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_border_brown"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/rd_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/gothambook"
+            android:includeFontPadding="false"
+
+            android:padding="10dp"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rd_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/gothambook"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:textColor="@color/white" />
+    </RadioGroup>
+</RelativeLayout>

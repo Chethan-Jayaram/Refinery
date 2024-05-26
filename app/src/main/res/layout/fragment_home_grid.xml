@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.HomeScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        tools:context=".activity.HomeScreenActivity">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/home_header_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/home_top_bg">
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas_regular"
+                android:lineSpacingExtra="-24sp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bebas_regular"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="-4sp"
+                android:paddingBottom="15dp"
+                android:text="Welcome to Refinery Hotel"
+                android:textColor="@color/brownish_grey"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-50dp"
+                android:alpha="0.06"
+                android:scaleType="fitXY"
+                android:src="@drawable/refinarylogo" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lyt_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_header_lyt">
+
+            <com.application.refinary.helper.ExpandableHeightGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:columnWidth="180dp"
+                android:horizontalSpacing="20dp"
+                android:numColumns="2"
+                android:nestedScrollingEnabled="false"
+                android:verticalSpacing="20dp"/>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/shimmer_layout">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/home_screen_shimmer"/>
+
+                    <include
+                        layout="@layout/home_screen_shimmer"/>
+
+                </LinearLayout>
+
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/lyt_view"
+            android:alpha="0.8"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_bottom_banner" />
+    </RelativeLayout>
+</ScrollView>

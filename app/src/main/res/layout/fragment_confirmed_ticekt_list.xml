@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ticket_recyler_list"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/ticket_list_shimmer"/>
+
+            <include
+                layout="@layout/ticket_list_shimmer"/>
+
+            <include
+                layout="@layout/ticket_list_shimmer"/>
+
+            <include
+                layout="@layout/ticket_list_shimmer"/>
+
+            <include
+                layout="@layout/ticket_list_shimmer"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

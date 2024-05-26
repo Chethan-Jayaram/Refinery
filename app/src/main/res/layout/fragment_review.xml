@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/bebas_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-12sp"
+        android:text="Review your stay at"
+        android:textAlignment="center"
+        android:textColor="#ada28a"
+        android:textSize="28sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="35dp"
+        android:alpha="0.8"
+        android:background="@drawable/login_bg">
+
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/refinarylogo" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/refinarylogotxt" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bebas_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-12sp"
+        android:text="How was your stay?"
+        android:textAlignment="center"
+        android:textColor="#ada28a"
+        android:textSize="28sp" />
+
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_terrible"
+                android:src="@drawable/ic_iv_terrible"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/iv_terrible"
+                android:text="Terriable"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:lineSpacingExtra="3.3sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_poor"
+                android:src="@drawable/ic_iv_poor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/iv_poor"
+                android:text="Poor"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:lineSpacingExtra="3.3sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_avg"
+                android:src="@drawable/ic_iv_avg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/iv_avg"
+                android:text="Average"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:lineSpacingExtra="3.3sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_good"
+                android:src="@drawable/ic_iv_good"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/iv_good"
+                android:text="Good"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:lineSpacingExtra="3.3sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_Excellent"
+                android:src="@drawable/ic_iv_excellent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/iv_Excellent"
+                android:text="Excellent"
+                android:textSize="12sp"
+                android:textColor="@color/brownish_grey"
+                android:lineSpacingExtra="3.3sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

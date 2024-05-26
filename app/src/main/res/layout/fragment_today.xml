@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="-24sp"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_region_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="-8sp"
+            android:fontFamily="@font/gotham_light"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_localtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="4sp"
+
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/condition_icon"
+                android:scaleType="fitXY"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_condition"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/gotham_light"
+                android:lineSpacingExtra="-4sp"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_up_arrow" />
+
+            <TextView
+                android:id="@+id/tv_max_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/up_arr"
+                android:lineSpacingExtra="-12sp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_down" />
+
+            <TextView
+                android:id="@+id/tv_min_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:lineSpacingExtra="-12sp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_temp_f"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="-60sp"
+            android:fontFamily="@font/gotham_light"
+            android:textColor="#ffffff"
+            android:textSize="80sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium"
+            android:text="Current Details"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Humidity"
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gotham_light"
+                android:lineSpacingExtra="12sp"
+                android:text="Precipitation"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tv_precipitation"
+                android:layout_marginLeft="50dp"
+
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pres_win"
+                android:text="Pressure"
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_pressure"
+                android:layout_marginLeft="50dp"
+
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Visiblity"
+                android:fontFamily="@font/gotham_light"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="12sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_visiblity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/gotham_light"
+                android:lineSpacingExtra="12sp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="@drawable/et_border_brown"
+            android:id="@+id/tv_custom_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="60dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="4sp"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/bebas_regular"
+        android:id="@+id/tv_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Laundry Service"
+        android:textColor="@color/brownish_grey"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:fontFamily="@font/gotham_light"
+        android:layout_below="@+id/tv_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:text="Please select a delivery type"
+        android:textColor="@color/brownish_grey"
+        android:textSize="18sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/laundry_delivery_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_bottom"
+        android:layout_below="@+id/tv_msg" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:visibility="gone"
+        android:layout_below="@+id/tv_msg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shimmer_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/deliverytype_shimmer"/>
+
+            <include
+                layout="@layout/deliverytype_shimmer"/>
+
+            <include
+                layout="@layout/deliverytype_shimmer"/>
+
+            <include
+                layout="@layout/deliverytype_shimmer"/>
+
+            <include
+                layout="@layout/deliverytype_shimmer"/>
+
+        </LinearLayout>
+
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brownish_grey"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_vertical"
+        android:text="@string/continu"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

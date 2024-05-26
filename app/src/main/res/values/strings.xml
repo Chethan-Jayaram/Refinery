@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">Refinery</string>
+    <string name="NETWORK_ISSUE">"Please check your internet connection and try again."</string>
+    <string name="NO_NETWORK">"Lost Internet Connection"</string>
+    <string name="SOCKET_ISSUE">"The request timed out."</string>
+    <string name="ERROR">"Unable to retrieve details. Please try later."</string>
+    <string name="enter_verification_code">ENTER VERIFICATION CODE</string>
+    <string name="please_type_the_6_digit_verification_code_sent">Please type the 6 digit verification code sent</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="didn_t_receive_the_verification_code">Didn\'t receive the verification code?</string>
+    <string name="set_your_mpin">SET YOUR Login Pin</string>
+    <string name="please_set_your_4_digit_mpin">Please set your 4 digit Login Pin</string>
+    <string name="forgot_your_pin">Forgot your Login Pin?</string>
+    <string name="do_you_have_an_account_register_now">Don\'t have an account? Register Now</string>
+    <string name="connect_to_hotel_wifi_network">Wi-fi Network hotel Refinery</string>
+    <string name="guest_service_directory">Guest Service Directory</string>
+    <string name="guest_service_desc">At your service - your direct service connection our team is delighted to assist you and to answer your questions</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="ordered_list_of_services">Ordered List of Services</string>
+    <string name="quantity">Quantity</string>
+    <string name="services">Services</string>
+    <string name="confirm_request">Confirm Request</string>
+    <string name="serice">Service</string>
+    <string name="price">Price</string>
+    <string name="quantiy">Quantiy</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="guest_name">Guest Name</string>
+    <string name="room_no">Room No</string>
+    <string name="ticket_details">Service Request Details</string>
+    <string name="activity_on">Activity On</string>
+    <string name="safety_in_the_hotel">Safety in the hotel</string>
+    <string name="inform_us">Inform Us</string>
+    <string name="in_room_dinning">In-Room Dining Menu</string>
+    <string name="dining_header_desc">Exceptional Service,Culinary Precision,Fresh Ingredients</string>
+    <string name="dinning_desc">Our In Room Dining service endeavours to provide you with a
+personal gastronomic experience equivalent to dining at our
+award winning restaurants. The culinary team has created an
+array of cuisines for your selection and enjoyment in the privacy
+and comfort of your room.</string>
+    <string name="view_order">View Order</string>
+    <string name="special_instructions">Any instructions? We promise to pass them on</string>
+    <string name="request_cab">Request a car</string>
+    <string name="hotel_cabs_tariff">Hotel Cabs-Tariff</string>
+    <string name="no_of_cab">No of cab</string>
+    <string name="book_now">Book Now</string>
+    <string name="started_on">Started On</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="amount">Amount</string>
+    <string name="from_currency">From Currency</string>
+    <string name="request_exchange">Request Exchange</string>
+    <string name="to_currency">To Currency</string>
+    <string name="get_value">Get Value</string>
+    <string name="set_your_prefrences">Set Your Preferences</string>
+    <string name="save">Save</string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="check_in">Check-in:</string>
+    <string name="check_out">Check-out:</string>
+    <string name="room_no1">Room No. :</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="contact_no">Conatct No:</string>
+    <string name="title">Title</string>
+    <string name="places_to_visit">places to visit in new york</string>
+    <string name="request_a_cab">Request a cab</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="profile_email">Email</string>
+    <string name="edit_profile">Update Profile</string>
+    <string name="gender">Gender</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="sos_string">Enable SOS in case of emergency,we our concern about your saftey at our stay</string>
+    <string name="swipe">Swipe</string>
+    <string name="register">Register</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="about_app"> An About Us page helps your company make a good first impression, and is critical for building customer
+                trust and loyalty. An About Us page should make sure to cover basic information about the store and its
+                founders, explain the company\'s purpose and how it differs from the competition, and encourage
+                discussion and interaction. Here are some free templates, samples, and example About Us pages to help your ecommerce store stand out from the crowd.\n\n
+                When it comes to personalizing your online store, nothing is more effective than an About Us page. This
+                is a quick summary of your company\'s history and purpose, and should provide a clear overview of the
+                company\'s brand story. A great About Us page can help tell your brand story, establish customer loyalty,
+                and turn your bland ecommerce store into an well-loved brand icon. Most importantly, it will give your
+                customers a reason to shop from your brand.\n\n  In this post, we\'ll give you three different ways to create a professional about us page for your online
+                store, blog, or other website - use our about us page generator, use the fill-in-the-blank about us
+                template below, or create your own custom page using the about us examples within this article.</string>
+
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="special_inst">Special instructions</string>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Marital_Status">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+
+    <string name="agree_terms_privacy">I agree with the &lt;a href="https://www.lemontreehotels.com/term-condition.aspx">Terms and conditions&lt;/a> and &lt;a href="https://www.lemontreehotels.com/privacy-policy.aspx">Privacy Policy&lt;/a></string>
+    <string name="six_digit_">Please type the 6 digit verification code</string>
+    <string name="opt_send">CONFIRM &amp; SEND OTP</string>
+    <string name="edittext_hint"><font size="15">Enter Email/Mobile Number</font></string>
+    <string name="login_msg">Log in to an \n Unforgettable stay</string>
+    <string name="enter_btn">Enter</string>
+
+
+    <!-- Error messages -->
+    <string name="error_generic_error">An error occurred</string>
+    <string name="error_api_is_busy">API is busy</string>
+    <string name="error_endpoint_not_personalize">Endpoint is not personalized</string>
+    <string name="error_server_communication_failed">Server communication failed. Check internet connectivity or try again later.</string>
+    <string name="error_device_not_eligible">Device not eligible for this service. Contact key administrator.</string>
+    <string name="error_device_api_incompatible">Mobile Access SDK incompatible. Upgrade your application in the Play Store</string>
+    <string name="error_setup_failed_retry">Invalid registration code. Retype or contact key administrator.</string>
+    <string name="error_internal_error">Internal error. Retry or contact key administrator if the problem persists.</string>
+    <string name="error_device_setup_failed">Device setup failed. Contact key administrator.</string>
+    <string name="warning_location_permission_not_granted">Warning BLE requires location permission</string>
+    <string name="location_services_request">Location access is required to open locks over bluetooth</string>
+    <string name="no_lock_in_range">No lock in range</string>
+    <string name="lock_in_range">Lock in range</string>
+
+    <string name="unlock_notification_title">Mobile Access is running</string>
+    <string name="notification_channel_name_informative">Running foreground scan service</string>
+
+
+    <!--Snackbar action titles-->
+    <string name="action_retry">Retry</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_enable">allow</string>
+    <string name="comments">Please write your comments here...</string>
+    <string name="Support">Support Service</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="nationality">Nationality</string>
+    <string name="mobile_check_in">Mobile Check-In</string>
+    <string name="kyc">KYC document (Document Number and Document Type)</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_number">Document Number</string>
+    <string name="attachments">Attachments</string>
+    <string name="upload">Upload</string>
+    <string name="submit">Submit</string>
+    <string name="create_mpin">CREATE Login Pin</string>
+    <string name="re_type_mpin">RE - TYPE Login Pin</string>
+    <string name="m_pin_login">Login Pin</string>
+    <string name="welcome_txt">Welcome to \n Refinery Hotel</string>
+    <string name="excahnage_desc">All figures are live mid-market rates, which are not available to consumers and are for informational purposes only.</string>
+    <string name="sub_header_tour">20 Top-Rated Tourist Attractions in New York City</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="wifi_text">Use this password to connect to the above wifi</string>
+    <string name="wifi_instructoions">1. From your smartphone, tablet or laptop, go to Wi-Fi settings. \n 2. Connect to \"xxxxxx-xxxxxx\". \n 3. Launch a browser on your smartphone, tablet or laptop an try to browse any URL. \n 4. You will be redirected to login page. use above username and password to start active your package.\n \n Note: Keep the browser or tab open till you are connected.</string>
+    <string name="how_to_connect">How To Connect</string>
+    <string name="identity_text">Use your fingerprint to verify your identity</string>
+    <string name="continu">Continue</string>
+
+
+    <string name="aboutHotel">
+    Located two blocks from Bryant Park, Refinery Hotel is a luxury hotel in Midtown Manhattan’s Garment District. While our home in the 1912 Colony Arcade building gives us a long history, our stylish loft rooms, acclaimed Parker &amp; Quinn restaurant, and trendsetting Refinery Rooftop bar create a fashionable refuge for locals and cultured visitors in present-day New York. \n \n
+
+    Drawing inspiration from our early life as a hat factory, each of the 197 rooms at Refinery Hotel feature industrial details such as 12-foot ceilings, large windows, and distressed hardwood floors. With mosaic tile floors and copper accents, our marble bathrooms are luxurious, down to the exclusive Le Labo bath products. 42" LCD TVs, fully-stocked minibars, and complimentary free WiFi access are also included in every room. \n
+
+    The Refinery Hotel is ADA compliant in accordance with the construction statutes of the Department of Justice 2010 ADA Standards for Accessible Design. For information about accessible features, please view our Accessibility Statement.\n
+
+    Refinery Hotel continues the Colony Arcade’s long tradition as a midtown meeting place. Home to a bar and restaurant since 1914, Refinery Hotel serves ribeye and soft-shell crabs at our Parker &amp; Quinn restaurant, while our intimate lobby bar, Winnie’s, hosts a schedule of live jazz music. Our celebrated, year-round Refinery Rooftop bar is known for its innovative cocktails created by In Good Company mixologists, as well as its unparalleled Empire State Building views. And from wine hours to pop-up programming in our Hatbox flex space, there is always something to see and do at the hotel.\n \n
+
+    Centrally located in Midtown Manhattan, Refinery Hotel is within walking distance of legendary shopping on Fifth Avenue. Our concierge is available to suggest shopping, dining and entertainment recommendations suited to specific needs and tastes, while our carefully crafted destination guide highlights our favorite things to see and do nearby—whether it’s taking in a new exhibit at one of the city’s finest museums uptown or exploring the downtown cocktail scene.\n \n
+
+</string>
+    <!--    android:fontFamily="sans-serif"           // roboto regular
+        android:fontFamily="sans-serif-light"     // roboto light
+        android:fontFamily="sans-serif-condensed" // roboto condensed
+        android:fontFamily="sans-serif-black"     // roboto black
+        android:fontFamily="sans-serif-thin"      // roboto thin (android 4.2)
+        android:fontFamily="sans-serif-medium"      // roboto medium (android 5.0)
+
+                   android:textStyle="italic"-->
+    <!-- android:fontFamily="sans-serif-medium"
+     android:textStyle="italic"-->
+    <string name="mobile_App_Id">Mobile App Id: %s</string>
+    <string name="ble_registration_device_Id">Device Id: %s</string>
+    <string name="ble_status_msg">BLE Status: %s</string>
+    <string name="unregister">Unregister</string>
+    <string name="synchronise">Synchronise</string>
+    <string name="get_all_files">Get all files</string>
+    <string name="activate_file">Activate</string>
+    <string name="deactivate_all_files">Deactivate all</string>
+    <string name="clear">Clear</string>
+    <string name="enter_phone_number">Enter Phone Number with country code</string>
+
+    <string name="enter_token_from_sms">Enter Token from SMS</string>
+    <string name="complete_registration">Complete Registration…</string>
+    <string name="about">About…</string>
+
+    <string name="error_113">All Keys: The key is not valid in the current lock mode or cycle. Lock is typically in an invalid mode. This code may also appear if you use standard or display keys when the PPK or SPK LEDs are flashing.</string>
+    <string name="error_117">Standard, Special, PPK and SPK Keys: The lock is in shutdown cycle because 10 or more invalid keys were used. A valid key must be used to terminate shutdown mode.</string>
+    <string name="error_122">Standard Keys: Lock level is non-operating for this key’s type. The key does not belong to this lock.</string>
+    <string name="error_123">Standard and Special Keys: Key is not mastered into the lock. The key does not belong to this lock.</string>
+    <string name="error_127">Standard Keys: Key does not have one of the 12 valid pass numbers required for the pass level.</string>
+    <string name="error_128">Standard and Special Keys: Key is an old key; its new key date is earlier than the lock’s key data. Replace the key with a current or new key.</string>
+    <string name="error_129">Standard and Special Keys: Key is an old key; its new key time is earlier than the lock’s key data. Replace the key with a current or new key.</string>
+    <string name="error_134">Standard and Special Keys: Key is an old key, level has limited sequence range (1-15) but key’s sequence number is older than the lock’s key data. Replace key with a current or new key. Use a re-sequence key if necessary.</string>
+    <string name="error_135">Standard and Special Keys: Key is too new, level has limited sequence range and key’s sequence number is beyond the lock’s key data and range. Make and use a re-sequence key, then try the original key again.</string>
+    <string name="error_136">Standard Key: Key is a limited use key and has already been used the maximum number of times. Replace key with a new key.</string>
+    <string name="error_137">Standard Key: The key is a new key but the door is dead bolted and the new key cannot be accepted. If key is for a new guest, the room is still occupied. Assign new guest to another room.</string>
+    <string name="error_141">All Keys: The key is expired based on the lock’s clock date and time. Replace key with a duplicate key with a later expiration date and time.</string>
+    <string name="error_149">Standard Key: Key is current but key’s level is inhibited. Replace key with a new key.</string>
+    <string name="error_150">Special Key: Key is current but key is inhibited. Replace key with a new key.</string>
+    <string name="error_152">Standard Key: Key’s level is electronically locked out. If this key is a dual, electronic lock/unlock, inhibit level, or unlatch/latch key; it will not perform its function. The electronic unlock key must be used to remove the electronic lockout.</string>
+    <string name="error_154">Standard Key: Key is an opening key, but the lock is dead bolted and the key cannot override it.</string>
+    <string name="error_178">Standard Key: The key is new and is identified as a pre-reg key which will not work until its check-in date and time. If desired, replace key with a new key.</string>
+    <string name="error_255">Generic Error</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

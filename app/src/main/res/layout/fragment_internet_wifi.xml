@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_wifi_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/bebas_regular"
+        android:lineSpacingExtra="-16sp"
+        android:text="@string/connect_to_hotel_wifi_network"
+        android:textAlignment="center"
+        android:textColor="@color/brownish_grey"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/wifi_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_wifi_header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/home_top_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="-6sp"
+            android:text="@string/user_name"
+            android:textAlignment="center"
+            android:textColor="@color/brownish_grey"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="-16sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="-6sp"
+            android:text="@string/password"
+            android:textAlignment="center"
+            android:textColor="@color/brownish_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="-16sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:lineSpacingExtra="-4sp"
+            android:text="@string/wifi_text"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_how_to_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_lyt"
+        android:layout_margin="20dp"
+        android:text="@string/how_to_connect"
+        android:textColor="@color/brownish_grey"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_how_to_connect"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="11.3sp"
+        android:textSize="12sp"
+        android:text="@string/wifi_instructoions"
+        android:textColor="@color/txt_color" />
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

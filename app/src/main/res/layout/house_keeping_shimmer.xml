@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#a7a7a7"
+        android:fontFamily="@font/gotham_medium"
+        android:textColor="@color/brownish_grey"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/home_top_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt"
+            android:background="#a7a7a7"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="2sp"
+            android:textColor="@color/white"
+            android:textSize="12.5sp" />
+        <TextView
+            android:id="@+id/tv_category_desc"
+            android:layout_width="match_parent"
+            android:layout_marginRight="35dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title"
+            android:layout_toStartOf="@+id/end_lyt"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price"
+            android:layout_width="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toStartOf="@+id/end_lyt1"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:lineSpacingExtra="2sp"
+            android:textColor="@color/white"
+            android:textSize="12.5sp" />
+        <TextView
+            android:id="@+id/tv_category_desc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title1"
+            android:layout_toStartOf="@+id/end_lyt1"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:layout_marginRight="15dp"
+
+            android:id="@+id/tv_category_price1"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc1"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt1"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+
+            android:layout_toStartOf="@+id/end_lyt2"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title2"
+            android:layout_toStartOf="@+id/end_lyt2"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price2"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc2"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt2"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt3"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:layout_marginRight="35dp"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title3"
+            android:layout_toStartOf="@+id/end_lyt3"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price3"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc3"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt3"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt4"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title4"
+            android:layout_toStartOf="@+id/end_lyt4"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price4"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc4"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt4"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt5"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title5"
+            android:layout_toStartOf="@+id/end_lyt5"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price5"
+            android:layout_width="50dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc5"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt5"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt6"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title6"
+            android:layout_toStartOf="@+id/end_lyt6"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price6"
+            android:layout_width="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc6"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt6"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+
+            android:layout_toStartOf="@+id/end_lyt7"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:layout_marginRight="35dp"
+
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title7"
+            android:layout_toStartOf="@+id/end_lyt7"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price7"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+
+            android:background="#a7a7a7"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc7"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt7"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_category_title8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/end_lyt8"
+            android:layout_marginRight="15dp"
+
+            android:textColor="@color/white"
+            android:lineSpacingExtra="2sp"
+            android:background="#a7a7a7"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="12.5sp"/>
+        <TextView
+            android:id="@+id/tv_category_desc8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_light"
+            android:lineSpacingExtra="5.3sp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:textColor="@color/txt_color"
+            android:layout_below="@+id/tv_category_title8"
+            android:layout_toStartOf="@+id/end_lyt8"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:id="@+id/tv_category_price8"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#a7a7a7"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category_desc8"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color"/>
+        <RelativeLayout
+            android:paddingStart="15dp"
+            android:id="@+id/end_lyt8"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="#a7a7a7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

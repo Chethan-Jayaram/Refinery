@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:paddingTop="3dp"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/lyt_sub_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="@font/gotham_light"
+            android:gravity="left"
+            android:id="@+id/tv_category_subtitle"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:fontFamily="@font/poppins_medium"
+            android:paddingRight="20dp"
+            android:id="@+id/tv_category_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="11.5sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

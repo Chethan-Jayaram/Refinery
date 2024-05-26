@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home_top_bg"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="93dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-10dp"
+                android:alpha="0.3"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_business" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:alpha="0.3"
+                android:background="@color/brownish_grey" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/bebas_regular"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="Welcome to refinery hotel nyc"
+                android:textColor="@color/brownish_grey"
+                android:textSize="28sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bebas_regular"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="Checked-in Successfully "
+                android:textColor="@color/brownish_grey"
+                android:textSize="22sp" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/gotham_light"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="You can still access this booking"
+                android:textColor="#ada28a"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_booking_id"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/gotham_light"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="Booking ID:	NH7501850959200"
+                android:textColor="#ada28a"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_review_bg"
+                android:fontFamily="@font/gotham_medium"
+                android:lineSpacingExtra="-4sp"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="15dp"
+                android:text="Write A Review"
+                android:textColor="@color/brownish_grey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/iv_hotel"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="-8sp"
+                android:text="Refinery Hotel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hotel_name"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toEndOf="@+id/tv_hotel"
+                android:isIndicator="true"
+                android:rating="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:theme="@style/RatingBar" />
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/iv_hotel"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="4.7sp"
+                android:text="63 W 38th St, New York, NY 10018,\nUnited States"
+                android:textColor="#979796"
+                android:textSize="10.7sp" />
+
+            <ImageView
+                android:id="@+id/iv_hotel"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_bg" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.19"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Nights"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Check-In"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Check-Out"
+                android:textColor="@color/txt_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.28"
+                android:textColor="@color/txt_color" />
+
+
+            <TextView
+                android:id="@+id/tv_checkin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="14th Feb, 12:00 PM"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:id="@+id/check_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="16 Feb, 11:00 AM"
+                android:textColor="@color/txt_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="12dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.19"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Rooms"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="#"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tv_room_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="707"
+                android:textColor="@color/txt_color" />
+
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="12dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.19"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Guests"
+                android:textColor="@color/txt_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="1"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="1 Adult, 0 Child"
+
+                android:textColor="@color/txt_color" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.28" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_dining" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.9"
+                android:fontFamily="@font/gothambook"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Breakfast Included"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+
+                <View
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circular_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_call" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_call"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/gothambook"
+                    android:lineSpacingExtra="1.3sp"
+                    android:text="Call \n Hotel"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+
+                <View
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circular_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_voucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_voucher" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_voucher"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/gothambook"
+                    android:lineSpacingExtra="1.3sp"
+                    android:text="Resend \n Voucher"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+
+                <View
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circular_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_headset" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_support"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/gothambook"
+                    android:lineSpacingExtra="1.3sp"
+                    android:text="Call \n Support"
+                    android:textAlignment="center"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="@color/home_top_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/ic_people" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gothambook"
+                    android:lineSpacingExtra="-8sp"
+                    android:text="1 Guest"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Tyler"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="2dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="(Primary)"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Tyler@gmail.com"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_call" />
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="+91-9483008693"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/home_top_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/ic_room" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gothambook"
+                    android:lineSpacingExtra="-8sp"
+                    android:text="1 Room"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_room_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/iv_room"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="1. Deluxe Double Queen"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/iv_room"
+                        android:layout_below="@+id/tv_room_details"
+                        android:id="@+id/tv_bed_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="(with 2 Queen Beds)"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_room"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/login_bg" />
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/tv_bed_size"
+                        android:id="@+id/iv_people"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_people" />
+
+                    <TextView
+                        android:layout_marginTop="22dp"
+                        android:layout_below="@+id/tv_bed_size"
+                        android:layout_toRightOf="@+id/iv_people"
+                        android:layout_toLeftOf="@+id/iv_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="1 Adult, 0 Children"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_green_tick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Accommodation"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_green_tick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Taxes"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_green_tick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="FREE Breakfast"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_green_tick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="3.3sp"
+                        android:text="Local ID proof is not accepted at this property. Available on 2020 - 02 - 14"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.15" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_dining" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Meal Plan:"
+                        android:textColor="@color/txt_color"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/gothambook"
+                        android:lineSpacingExtra="-8sp"
+                        android:text="Breakfast"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>
